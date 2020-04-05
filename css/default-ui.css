@@ -145,7 +145,8 @@ flex-stretch
 }
 
 .boxed {
-  width: 960px;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .flex {
@@ -283,7 +284,9 @@ flex-stretch
  * @description For laptops and desktops
  */
 @media only screen and (min-width: 992px) {
-  /* extralarge displays */
+  .boxed {
+    width: 960px;
+  }
 }
 /*
  * @keyword #extralarge
