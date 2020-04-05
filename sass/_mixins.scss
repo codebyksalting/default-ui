@@ -20,6 +20,37 @@
             border-radius: $units;
 }
 
+// Media Query Mixins
+@mixin small {
+    @media (max-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin portrait {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin landscape {
+    @media (max-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (max-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin extralarge {
+    @media (max-width: #{$extralarge}) {
+        @content;
+    }
+}
+
 @function color($type) {
     @return map-get($colorPalette, $type);
 }
