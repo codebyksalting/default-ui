@@ -38,6 +38,10 @@ flex-stretch
     background-color: $highlightColor;
 }
 
+.boxed {
+    @include marginMobile();
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
