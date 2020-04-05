@@ -122,6 +122,150 @@ flex-stretch
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-2 {
+    width: 16.66%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-3 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-4 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-5 {
+    width: 41.66%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-7 {
+    width: 58.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-8 {
+    width: 66.66%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-9 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-10 {
+    width: 83.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-11 {
+    width: 91.66%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-2 {
+    width: 16.66%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-3 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-4 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-5 {
+    width: 41.66%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-7 {
+    width: 58.33%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-8 {
+    width: 66.66%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-9 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-10 {
+    width: 83.33%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-11 {
+    width: 91.66%;
+  }
+}
+
+@media (min-width: 600px) {
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
 #wrapper {
   display: flex;
   flex-direction: column;
@@ -147,6 +291,17 @@ flex-stretch
 .boxed {
   margin-left: 3%;
   margin-right: 3%;
+}
+@media (min-width: 768px) {
+  .boxed {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) {
+  .boxed {
+    width: 960px;
+  }
 }
 
 .flex {

@@ -16,6 +16,150 @@ flex-stretch
     width: 100%;
 }
 
+.col-1 {
+    @include landscape {
+        width: 8.33%; 
+    }
+}
+
+.col-2 {
+    @include landscape {
+        width: 16.66%;
+    }
+}
+
+.col-3 {
+    @include landscape {
+        width: 25%;
+    }
+}
+
+.col-4 {
+    @include landscape {
+        width: 33.33%;
+    }
+}
+
+.col-5 {
+    @include landscape {
+        width: 41.66%;
+    }
+}
+
+.col-6 {
+    @include landscape {
+        width: 50%;
+    }
+}
+
+.col-7 {
+    @include landscape {
+        width: 58.33%;
+    }
+}
+
+.col-8 {
+    @include landscape {
+        width: 66.66%;
+    }
+}
+
+.col-9 {
+    @include landscape {
+        width: 75%;
+    }
+}
+
+.col-10 {
+    @include landscape {
+        width: 83.33%;
+    }
+}
+
+.col-11 {
+    @include landscape {
+        width: 91.66%;
+    }
+}
+
+.col-12 {
+    @include landscape {
+        width: 100%;
+    }
+}
+
+.col-s-1 {
+    @include portrait {
+        width: 8.33%;
+    }
+}
+
+.col-s-2 {
+    @include portrait {
+        width: 16.66%;
+    }
+}
+
+.col-s-3 {
+    @include portrait {
+        width: 25%;
+    }
+}
+
+.col-s-4 {
+    @include portrait {
+        width: 33.33%;
+    }
+}
+
+.col-s-5 {
+    @include portrait {
+        width: 41.66%;
+    }
+}
+
+.col-s-6 {
+    @include portrait {
+        width: 50%;
+    }
+}
+
+.col-s-7 {
+    @include portrait {
+        width: 58.33%;
+    }
+}
+
+.col-s-8 {
+    @include portrait {
+        width: 66.66%;
+    }
+}
+
+.col-s-9 {
+    @include portrait {
+        width: 75%;
+    }
+}
+
+.col-s-10 {
+    @include portrait {
+        width: 83.33%;
+    }
+}
+
+.col-s-11 {
+    @include portrait {
+        width: 91.66%;
+    }
+}
+
+.col-s-12 {
+    @include portrait {
+        width: 100%; 
+    }
+}
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -40,6 +184,14 @@ flex-stretch
 
 .boxed {
     @include marginMobile();
+
+    @include landscape {
+        @include marginCenter();
+    }
+
+    @include large {
+        width: $boxWidth;
+    }
 }
 
 .flex {
