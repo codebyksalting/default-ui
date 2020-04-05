@@ -87,6 +87,27 @@ textarea {
   resize: vertical;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxed {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+@media (min-width: 768px) {
+  .boxed {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) {
+  .boxed {
+    width: 960px;
+  }
+}
+
 [class*="col-"] {
   width: 100%;
 }
@@ -235,9 +256,19 @@ textarea {
   }
 }
 
-#wrapper {
+.flex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex.align-top {
+  align-items: flex-start;
+}
+.flex.stretch {
+  align-items: stretch;
+}
+.flex.align-bottom {
+  align-items: flex-end;
 }
 
 #header_row {
@@ -255,37 +286,6 @@ textarea {
   order: 2;
   padding: 30px 0;
   background-color: #ccc;
-}
-
-.boxed {
-  margin-left: 3%;
-  margin-right: 3%;
-}
-@media (min-width: 768px) {
-  .boxed {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 992px) {
-  .boxed {
-    width: 960px;
-  }
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.flex.align-top {
-  align-items: flex-start;
-}
-.flex.stretch {
-  align-items: stretch;
-}
-.flex.align-bottom {
-  align-items: flex-end;
 }
 
 /*# sourceMappingURL=default-ui.css.map */

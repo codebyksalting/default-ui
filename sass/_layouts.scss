@@ -1,3 +1,22 @@
+// #containers
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxed {
+    @include marginMobile();
+
+    @include landscape {
+        @include marginCenter();
+    }
+
+    @include large {
+        width: $boxWidth;
+    }
+}
+
 // #columns
 
 [class*="col-"] {
@@ -149,23 +168,6 @@
 }
 
 // #rows
-
-#wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.boxed {
-    @include marginMobile();
-
-    @include landscape {
-        @include marginCenter();
-    }
-
-    @include large {
-        width: $boxWidth;
-    }
-}
 
 // #adjustments
 
