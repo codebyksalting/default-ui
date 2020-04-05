@@ -9,3 +9,20 @@
 @import './mixins';
 @import './defaults';
 @import './layouts';
+
+#header_row {
+    order: 0;
+    padding: section(normal);
+    background-color: color(light);
+}
+
+#content_row {
+    order: 1;
+    padding: section(wide);
+}
+
+#footer_row {
+    order: 2;
+    padding: section(wide);
+    background-color: color(dark);
+}
