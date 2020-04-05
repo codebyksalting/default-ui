@@ -4,17 +4,12 @@ $headerRowPadding: 10px 0;
 $contentRowPadding: 50px 0;
 $footerRowPadding: 30px 0;
 
-$lightColor: #fff;
-$mutedColor: #f6f6f6;
-$highlightColor: #ccc;
-$darkColor: #333;
-
-$colorList: (
+$colorPalette: (
     primary: #cd3700,
-    accent: #ccc,
+    seconday: #085083,
+    accent: #56b700,
     text: #333,
-    link: #000,
-    hover: #fc0,
-    light: #f6f6f6,
+    light: #fff,
+    mid: #f6f6f6,
     dark: #ccc
 );
