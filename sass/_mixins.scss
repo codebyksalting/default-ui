@@ -34,7 +34,7 @@
 }
 
 @mixin landscape {
-    @media (max-width: #{$small}) {
+    @media (max-width: #{$landscape}) {
         @content;
     }
 }
