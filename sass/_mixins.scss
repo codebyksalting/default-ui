@@ -1,0 +1,20 @@
+@mixin marginCenter() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin transitionAll() {
+    transition: all 0.3s ease-in;
+}
+
+@mixin borderRadius($units) {
+    -webkit-border-radius: $units;
+       -moz-border-radius: $units;
+        -ms-border-radius: $units;
+         -o-border-radius: $units;
+            border-radius: $units;
+}
+
+@function color($type) {
+    @return map-get($colorList, $type);
+}

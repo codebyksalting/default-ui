@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
+}
+
+clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+/* 
+ * @keyword #links
+ */
+a {
+    &:link, &:visited, &:active {
+        text-decoration: underline;
+    }
+    &:hover {
+        @include transitionAll();
+        text-decoration: underline;
+    }
+}
+
+/* 
+ * @keyword #formatting
+ */
+body {
+    background-color: #f6f6f6;
+}
+
+%headings {
+    margin-bottom: 20px;
+}
+
+h1 {
+    @extend %headings;
+}
+
+h2 {
+    @extend %headings;
+}
+
+h3 {
+    @extend %headings;
+}
+
+h4 {
+    @extend %headings;
+}
+
+h5 {
+    @extend %headings;
+}
+
+h6 {
+    @extend %headings;
+}
+
+p {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+%bold {
+    font-weight: 700;
+}
+
+b {
+    @extend %bold;
+}
+
+strong {
+    @extend %bold;
+}
+
+em {
+
+}
+
+ins {
+
+}
+
+del {
+
+}
+
+pre {
+
+}
+
+code {
+
+}
+
+address {
+
+}
+
+/* 
+ * @keyword #lists
+ */
+
+%lists {
+    list-style-type: none;
+}
+
+ul {
+    @extend %lists;
+    li {
+        padding: 0;
+    }
+}
+
+ol {
+    @extend %lists;
+    li {
+        padding: 0;
+    }
+}
+
+dl {
+    dt {
+        padding: 0;
+    }
+    dd {
+        padding: 0;
+    }
+}
+
+/* 
+ * @keyword #forms
+ */
+
+// input, textarea, select, button
+%form-itsb {
+    padding: 15px 10px;
+    line-height: 1.2;
+    transform: none;
+}
+
+// input, textarea, select
+%form-its {
+    border: 1px solid #999;
+    color: #555;
+    background-color: #f6f6f6;
+}
+
+// button, input
+%form-bi {
+    border: 0 none;
+    color: #f6f6f6;
+    background-color: #555;
+}
+
+input {
+    @extend %form-itsb;
+    @extend %form-its;
+    &[type="submit"] {
+        @extend %form-bi;
+        &:hover {
+
+        }
+    }
+}
+
+textarea {
+    @extend %form-itsb;
+    @extend %form-its;
+    resize: vertical;
+}
+
+select {
+    @extend %form-itsb;
+    @extend %form-its;
+}
+
+button {
+    @extend %form-itsb;
+    @extend %form-bi;
+    &:hover {
+            
+    }
+}
+
+/* 
+ * @keyword #tables
+ */
+
+/* figure,figcaption
+add js for beautiful select boxes
+*/

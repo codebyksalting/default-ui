@@ -1,0 +1,20 @@
+$boxWidth: 960px;
+
+$headerRowPadding: 10px 0;
+$contentRowPadding: 50px 0;
+$footerRowPadding: 30px 0;
+
+$lightColor: #fff;
+$mutedColor: #f6f6f6;
+$highlightColor: #ccc;
+$darkColor: #333;
+
+$colorList: (
+    primary: #cd3700,
+    accent: #ccc,
+    text: #333,
+    link: #000,
+    hover: #fc0,
+    light: #f6f6f6,
+    dark: #ccc
+);

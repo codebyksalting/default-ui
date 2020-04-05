@@ -1,0 +1,296 @@
+/*
+ * @desc Default UI
+ * @author Kendrick Salting
+ * @url https://codebyksalting.github.com
+ * @license MIT License
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* 
+ * @keyword #links
+ */
+a:link, a:visited, a:active {
+  text-decoration: underline;
+}
+a:hover {
+  transition: all 0.3s ease-in;
+  text-decoration: underline;
+}
+
+/* 
+ * @keyword #formatting
+ */
+body {
+  background-color: #f6f6f6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+/* 
+ * @keyword #lists
+ */
+ul, ol {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 0;
+}
+
+ol li {
+  padding: 0;
+}
+
+dl dt {
+  padding: 0;
+}
+dl dd {
+  padding: 0;
+}
+
+/* 
+ * @keyword #forms
+ */
+input, textarea, select, button {
+  padding: 15px 10px;
+  line-height: 1.2;
+  transform: none;
+}
+
+input, textarea, select {
+  border: 1px solid #999;
+  color: #555;
+  background-color: #f6f6f6;
+}
+
+input[type="submit"], button {
+  border: 0 none;
+  color: #f6f6f6;
+  background-color: #555;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* 
+ * @keyword #tables
+ */
+/* figure,figcaption
+add js for beautiful select boxes
+*/
+/*
+
+Always Design for Mobile First
+Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).
+
+This means that we must make some changes in our CSS.
+
+Instead of changing styles when the width gets smaller than 768px, we should change the design when the width gets larger than 768px.
+
+flex-stretch
+
+*/
+/* Mobile first */
+[class*="col-"] {
+  width: 100%;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#header_row {
+  order: 0;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+#content_row {
+  order: 1;
+  padding: 50px 0;
+}
+
+#footer_row {
+  order: 2;
+  padding: 30px 0;
+  background-color: #ccc;
+}
+
+.boxed {
+  width: 960px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex.align-top {
+  align-items: flex-start;
+}
+.flex.stretch {
+  align-items: stretch;
+}
+.flex.align-bottom {
+  align-items: flex-end;
+}
+
+/* 
+ * @keyword #small
+ * @description For smartphones
+ */
+/*
+ * @keyword #portrait
+ * @description For tablets and phablets in portrait mode
+ */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+}
+/*
+ * @keyword #landscape
+ * @description For tablets in landscape mode
+ */
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .boxed {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*
+ * @keyword #large
+ * @description For laptops and desktops
+ */
+@media only screen and (min-width: 992px) {
+  /* extralarge displays */
+}
+/*
+ * @keyword #extralarge
+ * @description For large laptops and desktops
+ */
+@media only screen and (min-width: 1200px) {
+  /* large displays */
+}
+
+/*# sourceMappingURL=default-ui.css.map */
