@@ -1,3 +1,5 @@
+// Miscellaneous
+
 @mixin marginMobile() {
     margin-left: 3%;
     margin-right: 3%;
@@ -21,6 +23,7 @@
 }
 
 // Media Query Mixins
+
 @mixin small {
     @media (max-width: #{$small}) {
         @content;
@@ -50,6 +53,8 @@
         @content;
     }
 }
+
+// Map Functions
 
 @function color($type) {
     @return map-get($colorPalette, $type);

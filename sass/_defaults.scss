@@ -1,3 +1,4 @@
+// #general
 
 * {
     margin: 0;
@@ -16,9 +17,8 @@ clearfix {
     }
 }
 
-/* 
- * @keyword #links
- */
+// #links
+
 a {
     &:link, &:visited, &:active {
         text-decoration: underline;
@@ -29,9 +29,8 @@ a {
     }
 }
 
-/* 
- * @keyword #formatting
- */
+// #formatting
+
 body {
     background-color: color(mid);
 }
@@ -107,9 +106,7 @@ address {
 
 }
 
-/* 
- * @keyword #lists
- */
+// #lists
 
 %lists {
     list-style-type: none;
@@ -138,9 +135,7 @@ dl {
     }
 }
 
-/* 
- * @keyword #forms
- */
+// #forms
 
 // input, textarea, select, button
 %form-itsb {
@@ -193,10 +188,4 @@ button {
     }
 }
 
-/* 
- * @keyword #tables
- */
-
-/* figure,figcaption
-add js for beautiful select boxes
-*/
+// #tables

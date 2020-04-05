@@ -1,17 +1,5 @@
-/*
+// #columns
 
-Always Design for Mobile First
-Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).
-
-This means that we must make some changes in our CSS.
-
-Instead of changing styles when the width gets smaller than 768px, we should change the design when the width gets larger than 768px.
-
-flex-stretch
-
-*/
-
-/* Mobile first */
 [class*="col-"] {
     width: 100%;
 }
@@ -160,6 +148,8 @@ flex-stretch
     }
 }
 
+// #rows
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -182,6 +172,8 @@ flex-stretch
     background-color: color(dark);
 }
 
+// #containers
+
 .boxed {
     @include marginMobile();
 
@@ -193,6 +185,8 @@ flex-stretch
         width: $boxWidth;
     }
 }
+
+// #adjustments
 
 .flex {
     display: flex;
