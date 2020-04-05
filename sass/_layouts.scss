@@ -23,18 +23,18 @@ flex-stretch
 
 #header_row {
     order: 0;
-    padding: $headerRowPadding;
+    padding: section(normal);
     background-color: color(light);
 }
 
 #content_row {
     order: 1;
-    padding: $contentRowPadding;
+    padding: section(wide);
 }
 
 #footer_row {
     order: 2;
-    padding: $footerRowPadding;
+    padding: section(wide);
     background-color: color(dark);
 }
 

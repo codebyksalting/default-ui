@@ -1,8 +1,11 @@
 $boxWidth: 960px;
 
-$headerRowPadding: 10px 0;
-$contentRowPadding: 50px 0;
-$footerRowPadding: 30px 0;
+$sectionPadding: (
+    narrow: 5px 0,
+    normal: 10px 0,
+    wide: 30px 0,
+    extrawide: 50px 0
+);
 
 $colorPalette: (
     primary: #cd3700,

@@ -23,3 +23,7 @@
 @function color($type) {
     @return map-get($colorPalette, $type);
 }
+
+@function section($size) {
+    @return map-get($sectionPadding, $size);
+}
