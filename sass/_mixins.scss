@@ -34,19 +34,19 @@
 }
 
 @mixin landscape {
-    @media (max-width: #{$landscape}) {
+    @media (min-width: #{$landscape}) {
         @content;
     }
 }
 
 @mixin large {
-    @media (max-width: #{$large}) {
+    @media (min-width: #{$large}) {
         @content;
     }
 }
 
 @mixin extralarge {
-    @media (max-width: #{$extralarge}) {
+    @media (min-width: #{$extralarge}) {
         @content;
     }
 }
