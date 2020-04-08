@@ -1,3 +1,4 @@
+// Layout Sizes
 $boxWidth: 960px;
 
 // Media Query Sizes
@@ -6,6 +7,7 @@ $landscape: 768px;
 $large: 992px;
 $extralarge: 1200px;
 
+// Padding Sizes
 $sectionPadding: (
     narrow: 5px 0,
     normal: 10px 0,
@@ -13,6 +15,7 @@ $sectionPadding: (
     extrawide: 50px 0
 );
 
+// Color Choices
 $colorPalette: (
     primary: #cd3700,
     seconday: #085083,
