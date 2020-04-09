@@ -9,12 +9,9 @@
     margin-left: margin(responsive);
     margin-right: margin(responsive);
 
-    @include landscape {
+    @include large {
         margin-left: margin(desktop);
         margin-right: margin(desktop);
-    }
-
-    @include large {
         width: $boxWidth;
     }
 }

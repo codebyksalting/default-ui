@@ -96,14 +96,10 @@ textarea {
   margin-left: 3%;
   margin-right: 3%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .boxed {
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media (min-width: 992px) {
-  .boxed {
     width: 960px;
   }
 }
@@ -261,6 +257,11 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+}
+@media (min-width: 600px) {
+  .row {
+    flex-wrap: wrap;
+  }
 }
 @media (min-width: 768px) {
   .row {
