@@ -18,10 +18,16 @@ $querySizes: (
 
 // Padding Sizes
 $sectionPadding: (
-    narrow: 5px 0,
-    normal: 10px 0,
-    wide: 30px 0,
-    extrawide: 50px 0
+    // Horizontal Padding
+    narrow: 5px,
+    normal: 10px,
+    wide: 30px,
+    extrawide: 50px,
+    // Vertical Padding
+    short: 5px,
+    regular: 10px,
+    tall: 30px,
+    extratall: 50
 );
 
 // Color Choices

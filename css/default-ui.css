@@ -273,19 +273,43 @@ textarea {
 }
 
 .narrow {
-  padding: 5px 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .normal {
-  padding: 10px 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .wide {
-  padding: 30px 0;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .extrawide {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.short {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.regular {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tall {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.extratall {
+  padding-top: 50;
+  padding-bottom: 50;
 }
 
 .primary {

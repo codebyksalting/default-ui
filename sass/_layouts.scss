@@ -195,19 +195,43 @@
 // #adjustments
 
 .narrow {
-    padding: section(narrow);
+    padding-left: section(narrow);
+    padding-right: section(narrow);
 }
 
 .normal {
-    padding: section(normal);
+    padding-left: section(normal);
+    padding-right: section(normal);
 }
 
 .wide {
-    padding: section(wide);
+    padding-left: section(wide);
+    padding-right: section(wide);
 }
 
 .extrawide {
-    padding: section(extrawide);
+    padding-top: section(extrawide);
+    padding-bottom: section(extrawide);
+}
+
+.short {
+    padding-top: section(short);
+    padding-bottom: section(short);
+}
+
+.regular {
+    padding-top: section(regular);
+    padding-bottom: section(regular);
+}
+
+.tall {
+    padding-top: section(tall);
+    padding-bottom: section(tall);
+}
+
+.extratall {
+    padding-top: section(extratall);
+    padding-bottom: section(extratall);
 }
 
 .primary {
