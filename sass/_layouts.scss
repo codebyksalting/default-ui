@@ -12,7 +12,7 @@
     @include large {
         margin-left: margin(desktop);
         margin-right: margin(desktop);
-        width: $boxWidth;
+        width: layout(width);
     }
 }
 

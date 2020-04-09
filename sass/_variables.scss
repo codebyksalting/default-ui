@@ -1,5 +1,8 @@
-// Layout Sizes
-$boxWidth: 960px;
+// Layout Configuration
+$layout: (
+    width: 960px,
+    gutter: 30px
+);
 
 // Margins
 $margins: (

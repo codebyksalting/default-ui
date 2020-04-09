@@ -46,6 +46,10 @@
 
 // Map Functions
 
+@function layout($config) {
+    @return map-get($layout, $config);
+}
+
 @function margin($type) {
     @return map-get($margins, $type);
 }
