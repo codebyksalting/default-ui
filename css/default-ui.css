@@ -291,46 +291,46 @@ textarea {
   display: none;
 }
 
-.menu-toggle span, .menu-toggle::before, .menu-toggle::after {
+.nav-toggle span, .nav-toggle::before, .nav-toggle::after {
   border-radius: 5px;
   width: 20px;
   height: 3px;
   background-color: gray;
 }
 
-.menu-toggle::before, .menu-toggle::after {
+.nav-toggle::before, .nav-toggle::after {
   position: absolute;
   content: '';
 }
 
-.menu-toggle {
+.nav-toggle {
   display: block;
   position: relative;
   border-radius: 5px;
   padding: 15px 7px;
   background-color: #f6f6f6;
 }
-.menu-toggle span {
+.nav-toggle span {
   display: block;
   text-align: left;
   text-indent: -9999em;
   overflow: hidden;
 }
-.menu-toggle::before {
+.nav-toggle::before {
   top: 9px;
 }
-.menu-toggle::after {
+.nav-toggle::after {
   bottom: 9px;
 }
-.menu-toggle.open span {
+.nav-toggle.open span {
   background-color: transparent;
 }
-.menu-toggle.open::before {
+.nav-toggle.open::before {
   top: 15px;
   transform: rotate(45deg);
   background-color: #c30;
 }
-.menu-toggle.open::after {
+.nav-toggle.open::after {
   bottom: 15px;
   transform: rotate(-45deg);
   background-color: #c30;
