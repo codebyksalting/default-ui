@@ -1,6 +1,13 @@
 // Layout Sizes
 $boxWidth: 960px;
 
+// Margins
+$margins: (
+    responsive: 3%,
+    desktop: auto,
+    float: 10px
+);
+
 // Media Query Sizes
 $querySizes: (
     small: 600px,
