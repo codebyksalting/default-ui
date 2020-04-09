@@ -1,15 +1,5 @@
 // Miscellaneous
 
-@mixin marginMobile() {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-@mixin marginCenter() {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @mixin transitionAll() {
     transition: all 0.3s ease-in;
 }
@@ -55,6 +45,10 @@
 }
 
 // Map Functions
+
+@function margin($type) {
+    @return map-get($margins, $type);
+}
 
 @function color($type) {
     @return map-get($colorPalette, $type);

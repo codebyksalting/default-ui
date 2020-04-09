@@ -6,10 +6,12 @@
 }
 
 .boxed {
-    @include marginMobile();
+    margin-left: margin(responsive);
+    margin-right: margin(responsive);
 
     @include landscape {
-        @include marginCenter();
+        margin-left: margin(desktop);
+        margin-right: margin(desktop);
     }
 
     @include large {
