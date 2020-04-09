@@ -32,6 +32,9 @@ a {
 // #formatting
 
 body {
+    @include small {
+        min-width: 320px;
+    }
 }
 
 %headings {
