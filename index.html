@@ -10,7 +10,7 @@
 
     <div class="wrapper">
 
-        <header id="header_row">
+        <header class="short bg-light">
             <div class="boxed flex">
                 <strong>Default UI</strong>
                 <nav class="navigation">
@@ -63,30 +63,56 @@
             </div>
         </header>
 
-        <section id="content_row">
+        <section class="tall">
             <div class="boxed">
-                <div class="row content-row">
+                <div class="row">
 
-                    <!-- Content -->
-                    <main>
+                    <div class="col-3 col-s-3">
+                        <aside>
+                            <strong>Text</strong>
+                            <div>
+                                <p>
+                                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                                </p>
+                                <p>
+                                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                                </p>
+                            </div>
+                        </aside>
+
+                        <aside>
+                            <strong>Menu</strong>
+                            <ul>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li>
+                                    <a href="#">Link</a>
+                                    <ul>
+                                        <li><a href="#">Link</a></li>
+                                        <li><a href="#">Link</a></li>
+                                        <li><a href="#">Link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+
+                    <main class="col-6 col-s-9">
                         lorem ipsum dolor sit amet
                     </main>
 
-                    <!-- Sidebar:first-child -->
-                    <aside>
-                        sidebar 1
-                    </aside>
-
-                    <!-- Sidebar:last-child -->
-                    <aside>
+                    <div class="col-3 col-s-12">
                         sidebar 2
-                    </aside>
+                    </div>
 
                 </div>
             </div>
         </section>
 
-        <footer id="footer_row">
+        <footer class="tall bg-dark">
             <div class="boxed">
                 <p>
                     Copyright &copy 2020 <a href="https://codebyksalting.github.com" target="_blank">Kendrick Salting</a>. All rights reserved.
