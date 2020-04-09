@@ -19,7 +19,21 @@
 // #columns
 
 [class*="col-"] {
+    position: relative;
     width: 100%;
+
+    @include small {
+        margin-bottom: layout(gutter);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include portrait {
+        padding-left: layout(gutter) / 2;
+        padding-right: layout(gutter) / 2;
+    }
 }
 
 .col-s-1 {
@@ -90,13 +104,23 @@
 
 .col-s-12 {
     @include portrait {
-        width: 100%; 
+        width: 100%;
+
+        &:last-child {
+            margin-top: layout(gutter);
+        }
+    }
+
+    @include landscape {
+        &:last-child {
+            margin-top: 0;
+        }
     }
 }
 
 .col-1 {
     @include landscape {
-        width: 8.33%; 
+        width: 8.33%;
     }
 }
 
@@ -173,10 +197,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    position: relative;
+    overflow: hidden;
 
     @include portrait {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: layout(gutter) / -2;
+        margin-right: layout(gutter) / -2;
     }
 }
 
