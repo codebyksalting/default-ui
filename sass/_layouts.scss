@@ -302,12 +302,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &.align-top {
         align-items: flex-start;
     }
+
     &.stretch {
         align-items: stretch;
     }
+    
     &.align-bottom {
         align-items: flex-end;
     }
