@@ -272,6 +272,22 @@ textarea {
   order: 3;
 }
 
+.narrow {
+  padding: 5px 0;
+}
+
+.normal {
+  padding: 10px 0;
+}
+
+.wide {
+  padding: 30px 0;
+}
+
+.extrawide {
+  padding: 50px 0;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;

@@ -192,6 +192,22 @@
 
 // #adjustments
 
+.narrow {
+    padding: section(narrow);
+}
+
+.normal {
+    padding: section(normal);
+}
+
+.wide {
+    padding: section(wide);
+}
+
+.extrawide {
+    padding: section(extrawide);
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
