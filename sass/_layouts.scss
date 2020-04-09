@@ -250,6 +250,10 @@
     color: color(error);
 }
 
+.text {
+    color: color(text);
+}
+
 .light {
     color: color(light);
 }
@@ -276,6 +280,10 @@
 
 .bg-error {
     background-color: color(error);
+}
+
+.bg-text {
+    background-color: color(text);
 }
 
 .bg-light {

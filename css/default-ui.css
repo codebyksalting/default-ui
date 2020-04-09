@@ -328,6 +328,10 @@ textarea {
   color: #c30;
 }
 
+.text {
+  color: #333;
+}
+
 .light {
   color: #fff;
 }
@@ -354,6 +358,10 @@ textarea {
 
 .bg-error {
   background-color: #c30;
+}
+
+.bg-text {
+  background-color: #333;
 }
 
 .bg-light {
