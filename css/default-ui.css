@@ -275,6 +275,51 @@ textarea {
   display: none;
 }
 
+.menu-toggle span, .menu-toggle::before, .menu-toggle::after {
+  border-radius: 5px;
+  width: 20px;
+  height: 3px;
+  background-color: gray;
+}
+
+.menu-toggle::before, .menu-toggle::after {
+  position: absolute;
+  content: '';
+}
+
+.menu-toggle {
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  padding: 15px 7px;
+  background-color: #f6f6f6;
+}
+.menu-toggle span {
+  display: block;
+  text-align: left;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+.menu-toggle::before {
+  top: 9px;
+}
+.menu-toggle::after {
+  bottom: 9px;
+}
+.menu-toggle.open span {
+  background-color: transparent;
+}
+.menu-toggle.open::before {
+  top: 15px;
+  transform: rotate(45deg);
+  background-color: #c30;
+}
+.menu-toggle.open::after {
+  bottom: 15px;
+  transform: rotate(-45deg);
+  background-color: #c30;
+}
+
 #header_row {
   order: 0;
   padding: 10px 0;

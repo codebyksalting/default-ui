@@ -3,3 +3,61 @@
         display: none;
     }
 }
+
+%lines {
+    border-radius: 5px;
+    width: 20px;
+    height: 3px;
+    background-color: lighten(color(text), 30);
+}
+
+%topbottom {
+    position: absolute;
+    content: '';
+}
+
+.menu-toggle {
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    padding: 15px 7px;
+    background-color: color(mid);
+
+    & span {
+        @extend %lines;
+        display: block;
+        text-align: left;
+        text-indent: -9999em;
+        overflow: hidden;
+    }
+
+    &::before {
+        @extend %lines;
+        @extend %topbottom;
+        top: 9px;
+    }
+
+    &::after {
+        @extend %lines;
+        @extend %topbottom;
+        bottom: 9px;
+    }
+
+    &.open {
+        & span {
+            background-color: transparent;
+        }
+
+        &::before {
+            top: 15px;
+            transform: rotate(45deg);
+            background-color: color(error);
+        }
+    
+        &::after {
+            bottom: 15px;
+            transform: rotate(-45deg);
+            background-color: color(error);
+        }
+    }
+}
