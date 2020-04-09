@@ -256,6 +256,22 @@ textarea {
   }
 }
 
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.row.content-row > aside:first-child {
+  order: 1;
+}
+.row.content-row > main {
+  order: 2;
+}
+.row.content-row > aside:last-child {
+  order: 3;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
