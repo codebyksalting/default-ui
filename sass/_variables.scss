@@ -2,10 +2,12 @@
 $boxWidth: 960px;
 
 // Media Query Sizes
-$small: 600px;
-$landscape: 768px;
-$large: 992px;
-$extralarge: 1200px;
+$querySizes: (
+    small: 600px,
+    landscape: 768px,
+    large: 992px,
+    extralarge: 1200px
+);
 
 // Padding Sizes
 $sectionPadding: (

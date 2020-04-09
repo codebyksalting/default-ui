@@ -25,31 +25,31 @@
 // Media Query Mixins
 
 @mixin small {
-    @media (max-width: #{$small}) {
+    @media (max-width: #{query(small)}) {
         @content;
     }
 }
 
 @mixin portrait {
-    @media (min-width: #{$small}) {
+    @media (min-width: #{query(small)}) {
         @content;
     }
 }
 
 @mixin landscape {
-    @media (min-width: #{$landscape}) {
+    @media (min-width: #{query(landscape)}) {
         @content;
     }
 }
 
 @mixin large {
-    @media (min-width: #{$large}) {
+    @media (min-width: #{query(large)}) {
         @content;
     }
 }
 
 @mixin extralarge {
-    @media (min-width: #{$extralarge}) {
+    @media (min-width: #{query(extralarge)}) {
         @content;
     }
 }
@@ -62,4 +62,8 @@
 
 @function section($size) {
     @return map-get($sectionPadding, $size);
+}
+
+@function query($type) {
+    @return map-get($querySizes, $type);
 }
