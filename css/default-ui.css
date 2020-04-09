@@ -260,12 +260,8 @@ textarea {
 }
 @media (min-width: 600px) {
   .row {
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 768px) {
-  .row {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
