@@ -147,3 +147,18 @@
 
 // #text
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.smallcaps {
+    font-variant: small-caps;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
