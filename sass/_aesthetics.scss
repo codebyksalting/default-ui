@@ -66,6 +66,47 @@
 
 // #align-content
 
+.left-content {
+    text-align: left;
+}
+
+.right-content {
+    text-align: right;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.justify-content {
+    text-align: justify;
+}
+
+// #align-self
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.left-self {
+    float: left;
+    margin-right: margin(float);
+    margin-bottom: margin(float);
+}
+
+.right-self {
+    float: right;
+    margin-left: margin(float);
+    margin-bottom: margin(float);
+}
+
+.center-self {
+    display: inline-block;
+    margin-left: margin(auto);
+    margin-right: margin(auto);
+}
+
 // #visibility
 
 // #text
