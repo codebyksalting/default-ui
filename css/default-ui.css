@@ -96,34 +96,19 @@ dl dd {
 }
 
 input, textarea, select, button {
-  padding: 15px 10px;
   line-height: 1.2;
   transform: none;
 }
 
 input, textarea, select {
-  border: 1px solid #ccc;
+  border-width: 1px;
+  border-style: solid;
   width: 100%;
-  color: #333;
-  background-color: #f6f6f6;
-}
-
-input[type="submit"], button {
-  border: 0 none;
-  color: #f6f6f6;
-  background-color: #555;
 }
 
 textarea {
   min-height: 200px;
   resize: vertical;
-}
-
-.label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 300;
-  font-size: 0.9em;
 }
 
 .wrapper {
@@ -620,6 +605,13 @@ textarea {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=default-ui.css.map */
