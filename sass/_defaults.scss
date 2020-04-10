@@ -68,7 +68,7 @@ h6 {
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: margin(paragraph);
 
     &:last-child {
         margin-bottom: 0;
