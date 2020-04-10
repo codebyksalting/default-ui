@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     &:focus {
         outline: none;
     }
@@ -23,6 +24,7 @@ a {
     &:link, &:visited, &:active {
         text-decoration: underline;
     }
+
     &:hover {
         @include transitionAll();
         text-decoration: underline;
@@ -67,6 +69,7 @@ h6 {
 
 p {
     margin-bottom: 20px;
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -163,8 +166,10 @@ dl {
 input {
     @extend %form-itsb;
     @extend %form-its;
+
     &[type="submit"] {
         @extend %form-bi;
+
         &:hover {
 
         }
@@ -185,6 +190,7 @@ select {
 button {
     @extend %form-itsb;
     @extend %form-bi;
+    
     &:hover {
             
     }
