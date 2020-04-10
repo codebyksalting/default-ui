@@ -601,6 +601,10 @@ textarea {
   opacity: 0;
 }
 
+.small-text {
+  font-size: 0.8em;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
