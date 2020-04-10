@@ -252,18 +252,53 @@
 
 .flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    &.direction-row {
+        flex-direction: row;
+    }
 
-    &.align-top {
+    &.direction-column {
+        flex-direction: column;
+    }
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+
+    &.justify-around {
+        justify-content: space-around;
+    }
+
+    &.justify-evenly {
+        justify-content: space-evenly;
+    }
+
+    &.justify-start {
+        justify-content: flex-start;
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
+
+    &.justify-end {
+        justify-content: flex-end;
+    }
+
+    &.item-start {
         align-items: flex-start;
     }
 
-    &.stretch {
+    &.item-center {
+        align-items: center;
+    }
+    
+    &.item-end {
+        align-items: flex-end;
+    }
+
+    &.item-stretch {
         align-items: stretch;
     }
 
-    &.align-bottom {
-        align-items: flex-end;
-    }
 }

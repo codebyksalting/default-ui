@@ -336,17 +336,42 @@ textarea {
 
 .flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.flex.align-top {
+.flex.direction-row {
+  flex-direction: row;
+}
+.flex.direction-column {
+  flex-direction: column;
+}
+.flex.justify-between {
+  justify-content: space-between;
+}
+.flex.justify-around {
+  justify-content: space-around;
+}
+.flex.justify-evenly {
+  justify-content: space-evenly;
+}
+.flex.justify-start {
+  justify-content: flex-start;
+}
+.flex.justify-center {
+  justify-content: center;
+}
+.flex.justify-end {
+  justify-content: flex-end;
+}
+.flex.item-start {
   align-items: flex-start;
 }
-.flex.stretch {
-  align-items: stretch;
+.flex.item-center {
+  align-items: center;
 }
-.flex.align-bottom {
+.flex.item-end {
   align-items: flex-end;
+}
+.flex.item-stretch {
+  align-items: stretch;
 }
 
 .navigation > ul {
