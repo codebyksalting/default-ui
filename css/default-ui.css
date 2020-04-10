@@ -560,6 +560,8 @@ textarea {
 
 .center-self {
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 15px;
 }
 
