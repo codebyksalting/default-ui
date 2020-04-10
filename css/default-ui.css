@@ -89,6 +89,11 @@ textarea {
   resize: vertical;
 }
 
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
