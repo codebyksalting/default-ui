@@ -522,6 +522,7 @@ textarea {
 
 .center-self {
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 .shown {
