@@ -96,14 +96,26 @@ dl dd {
 }
 
 input, textarea, select, button {
+  padding: 15px 10px;
   line-height: 1.2;
   transform: none;
 }
 
 input, textarea, select {
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid #ccc;
   width: 100%;
+}
+
+input[type="submit"], button {
+  border: 0 none;
+  color: #fff;
+  background-color: #333;
+}
+
+@media (min-width: 600px) {
+  input[type="submit"] {
+    width: auto;
+  }
 }
 
 textarea {

@@ -162,15 +162,13 @@ dl {
 %form-its {
     border: 1px solid color(dark);
     width: 100%;
-    color: color(text);
-    background-color: color(mid);
 }
 
 // button, input
 %form-bi {
     border: 0 none;
-    color: #f6f6f6;
-    background-color: #555;
+    color: color(light);
+    background-color: color(text);
 }
 
 input {
@@ -179,6 +177,10 @@ input {
 
     &[type="submit"] {
         @extend %form-bi;
+        
+        @include portrait {
+            width: auto;
+        }
 
         &:hover {
 
