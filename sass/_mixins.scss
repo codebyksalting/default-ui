@@ -70,6 +70,10 @@
     @return map-get($fonts, $type);
 }
 
+@function size($type) {
+    @return map-get($fontSizes, $type);
+}
+
 @function weight($type) {
     @return map-get($fontWeights, $type);
 }

@@ -43,6 +43,17 @@ $fonts: (
     content: ('Open Sans', Arial, Helvetica, sans-serif)
 );
 
+// Font Sizes 
+$fontSizes: (
+    content: 14px,
+    h1: 2em,
+    h2: 1.8em,
+    h3: 1.6em,
+    h4: 1.5em,
+    h5: 1.4em,
+    h6: 1.3em
+);
+
 // Font Weights
 $fontWeights: (
     heading: 700,
