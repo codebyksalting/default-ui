@@ -65,3 +65,7 @@
 @function query($type) {
     @return map-get($querySizes, $type);
 }
+
+@function weight($type) {
+    @return map-get($fontWeights, $type);
+}
