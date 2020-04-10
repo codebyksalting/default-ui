@@ -34,6 +34,8 @@ a {
 // #formatting
 
 body {
+    font-family: font(content);
+
     @include small {
         min-width: layout(minwidth);
     }
