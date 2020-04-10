@@ -16,6 +16,24 @@
     }
 }
 
+// #rows
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+
+    @include portrait {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: layout(gutter) / -2;
+        margin-right: layout(gutter) / -2;
+    }
+}
+
 // #columns
 
 [class*="col-"] {
@@ -187,24 +205,6 @@
 .col-12 {
     @include landscape {
         width: 100%;
-    }
-}
-
-// #rows
-
-.row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    position: relative;
-    overflow: hidden;
-
-    @include portrait {
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: layout(gutter) / -2;
-        margin-right: layout(gutter) / -2;
     }
 }
 
