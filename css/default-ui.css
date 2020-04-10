@@ -67,6 +67,10 @@ dl dd {
   padding: 0;
 }
 
+form {
+  width: 100%;
+}
+
 input, textarea, select, button {
   padding: 15px 10px;
   line-height: 1.2;
