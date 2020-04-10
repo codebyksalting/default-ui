@@ -49,8 +49,13 @@
     }
 
     @include portrait {
+        margin-bottom: layout(gutter);
         padding-left: layout(gutter) / 2;
         padding-right: layout(gutter) / 2;
+
+        &.clear-margin {
+            margin-bottom: 0;
+        }
     }
 }
 
