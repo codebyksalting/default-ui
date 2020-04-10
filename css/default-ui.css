@@ -27,6 +27,9 @@ a:hover {
   text-decoration: underline;
 }
 
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
 @media (max-width: 600px) {
   body {
     min-width: 320px;
@@ -74,8 +77,8 @@ input, textarea, select, button {
 }
 
 input, textarea, select {
-  border: 1px solid #999;
-  color: #555;
+  border: 1px solid #ccc;
+  color: #333;
   background-color: #f6f6f6;
 }
 
@@ -92,6 +95,7 @@ textarea {
 .label {
   display: block;
   margin-bottom: 5px;
+  font-weight: 300;
 }
 
 .wrapper {
