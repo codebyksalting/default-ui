@@ -109,5 +109,41 @@
 
 // #visibility
 
+.shown {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.opaque {
+    opacity: 1;
+}
+
+.semi-opaque {
+    opacity: 0.75;
+}
+
+.translucent {
+    opacity: 0.5;
+}
+
+.semi-transparent {
+    opacity: 0.25;
+}
+
+.transparent {
+    opacity: 0;
+}
+
 // #text
 
