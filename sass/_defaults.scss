@@ -159,9 +159,10 @@ dl {
 
 // input, textarea, select
 %form-its {
-    border: 1px solid #999;
-    color: #555;
-    background-color: #f6f6f6;
+    border: 1px solid color(dark);
+    width: 100%;
+    color: color(text);
+    background-color: color(mid);
 }
 
 // button, input
@@ -187,6 +188,7 @@ input {
 textarea {
     @extend %form-itsb;
     @extend %form-its;
+    min-height: 200px;
     resize: vertical;
 }
 
@@ -202,6 +204,13 @@ button {
     &:hover {
             
     }
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: weight(label);
+    font-size: size(label);
 }
 
 // #tables
