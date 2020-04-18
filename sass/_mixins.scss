@@ -12,6 +12,14 @@
             border-radius: $units;
 }
 
+@mixin outlineOff() {
+    outline: none;
+}
+
+@mixin outlineOn() {
+    outline: 2px solid color(primary);
+}
+
 // Media Query Mixins
 
 @mixin small {

@@ -26,6 +26,10 @@ a:hover {
   transition: all 0.3s ease-in;
   text-decoration: underline;
 }
+a:focus {
+  outline: 2px solid #cd3700;
+  outline-offset: 5px;
+}
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -149,10 +153,24 @@ input[type="submit"], button {
     width: auto;
   }
 }
+input:focus {
+  outline: 2px solid #cd3700;
+}
 
 textarea {
   min-height: 200px;
   resize: vertical;
+}
+textarea:focus {
+  outline: 2px solid #cd3700;
+}
+
+select:focus {
+  outline: 2px solid #cd3700;
+}
+
+button:focus {
+  outline: 2px solid #cd3700;
 }
 
 .wrapper {

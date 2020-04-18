@@ -6,7 +6,7 @@
     box-sizing: border-box;
 
     &:focus {
-        outline: none;
+        @include outlineOff();
     }
 }
 
@@ -28,6 +28,11 @@ a {
     &:hover {
         @include transitionAll();
         text-decoration: underline;
+    }
+
+    &:focus {
+        @include outlineOn();
+        outline-offset: 5px;
     }
 }
 
@@ -212,6 +217,10 @@ input {
 
         }
     }
+
+    &:focus {
+        @include outlineOn();
+    }
 }
 
 textarea {
@@ -219,11 +228,19 @@ textarea {
     @extend %form-its;
     min-height: 200px;
     resize: vertical;
+
+    &:focus {
+        @include outlineOn();
+    }
 }
 
 select {
     @extend %form-itsb;
     @extend %form-its;
+
+    &:focus {
+        @include outlineOn();
+    }
 }
 
 button {
@@ -232,6 +249,10 @@ button {
 
     &:hover {
             
+    }
+
+    &:focus {
+        @include outlineOn();
     }
 }
 
