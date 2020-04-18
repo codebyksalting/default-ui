@@ -196,7 +196,6 @@ button:focus {
   justify-content: space-between;
   align-items: stretch;
   position: relative;
-  overflow: hidden;
 }
 @media (min-width: 600px) {
   .row {
