@@ -474,6 +474,7 @@ button:focus {
 
 .nav-toggle::before, .nav-toggle::after {
   position: absolute;
+  left: 7px;
   content: '';
 }
 
